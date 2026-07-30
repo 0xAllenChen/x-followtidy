@@ -90,7 +90,6 @@ See [PRIVACY.md](PRIVACY.md) for the full privacy summary.
 | `scripting` | Load the worker into the Following page when needed. |
 | `sidePanel` | Display progress and controls beside X. |
 | `https://x.com/*` | Inspect the Following list and perform requested actions. |
-| `https://twitter.com/*` | Preserve compatibility with legacy X/Twitter links. |
 
 ## Development
 
@@ -100,6 +99,8 @@ The extension uses plain HTML, CSS, and JavaScript with no runtime dependencies 
 npm test
 npm run check
 ```
+
+Chrome Web Store submission copy, permission justifications, and privacy-field notes are available in [STORE_LISTING.md](STORE_LISTING.md).
 
 Project layout:
 
@@ -112,6 +113,7 @@ Project layout:
 ├── popup.*                Start flow and initial settings
 ├── dashboard.*            Side-panel progress, controls, and history
 ├── assets/                 Privacy-safe promotional screenshots
+├── store-assets/           Chrome Web Store listing graphics
 ├── icons/                 Extension icons
 ├── tests/                 Node-based safety and parser checks
 └── PRIVACY.md             Privacy summary

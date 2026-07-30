@@ -4,9 +4,8 @@
   "version": "1.0.0",
   "description": "Safely unfollow accounts on X for free, with follower filters and adjustable pacing.",
   "minimum_chrome_version": "116",
-  "homepage_url": "https://github.com/0xAllenChen/x-followtidy",
   "permissions": ["storage", "unlimitedStorage", "tabs", "scripting", "sidePanel"],
-  "host_permissions": ["https://x.com/*", "https://twitter.com/*"],
+  "host_permissions": ["https://x.com/*"],
   "action": {
     "default_title": "X FollowTidy",
     "default_popup": "popup.html",
@@ -25,7 +24,7 @@
   },
   "background": { "service_worker": "background.js", "type": "module" },
   "content_scripts": [{
-    "matches": ["https://x.com/*", "https://twitter.com/*"],
+    "matches": ["https://x.com/*"],
     "js": ["filter-utils.js", "content.js"],
     "run_at": "document_idle"
   }]
