@@ -8,7 +8,7 @@
   A free, local-first Chrome extension for safely tidying your X Following list.
 </p>
 
-![X FollowTidy running beside a demo X Following list](assets/x-followtidy-showcase.png)
+![X FollowTidy running beside a demo X Following list](store-assets/promo-perspective-1280x800.png)
 
 <p align="center"><sub>Promotional preview using fictional demo accounts and generated avatars.</sub></p>
 
