@@ -8,6 +8,10 @@
   A free, local-first Chrome extension for safely tidying your X Following list.
 </p>
 
+![X FollowTidy running beside a demo X Following list](assets/x-followtidy-showcase.png)
+
+<p align="center"><sub>Promotional preview using fictional demo accounts and generated avatars.</sub></p>
+
 > [!CAUTION]
 > X FollowTidy automates unfollow actions in the browser. X may change its interface or apply account-specific action limits. Use conservative pacing, keep batches small, and stop if X displays a warning. This project is not affiliated with or endorsed by X Corp.
 
@@ -107,6 +111,7 @@ Project layout:
 ├── filter-utils.js        Locale-aware follower-count parsing and cap validation
 ├── popup.*                Start flow and initial settings
 ├── dashboard.*            Side-panel progress, controls, and history
+├── assets/                 Privacy-safe promotional screenshots
 ├── icons/                 Extension icons
 ├── tests/                 Node-based safety and parser checks
 └── PRIVACY.md             Privacy summary
@@ -125,5 +130,7 @@ Project layout:
 X FollowTidy is free. If it saves you time, you can optionally support development through [GitHub Sponsors](https://github.com/sponsors/0xAllenChen).
 
 ## Project status
+
+Current version: **1.0.0**
 
 This repository is currently maintained as a private project while the extension is being tested and hardened.

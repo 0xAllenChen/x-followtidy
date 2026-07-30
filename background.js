@@ -1,5 +1,5 @@
 const DEFAULT_STATUS = { running: false, completed: 0, total: 0, message: "Ready" };
-const CONTENT_VERSION = "0.4.4";
+const CONTENT_VERSION = "1.0.0";
 let statusWrite = Promise.resolve();
 
 const wait = (milliseconds) => new Promise((resolve) => setTimeout(resolve, milliseconds));

@@ -1,5 +1,5 @@
 (() => {
-const CONTENT_VERSION = "0.4.4";
+const CONTENT_VERSION = "1.0.0";
 if (globalThis.__clearFollowContentVersion === CONTENT_VERSION) return;
 globalThis.__clearFollowContentVersion = CONTENT_VERSION;
 const run = {

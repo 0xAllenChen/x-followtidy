@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "X FollowTidy",
-  "version": "0.4.4",
+  "version": "1.0.0",
   "description": "Safely unfollow accounts on X for free, with follower filters and adjustable pacing.",
   "minimum_chrome_version": "116",
   "homepage_url": "https://github.com/0xAllenChen/x-followtidy",
