@@ -73,7 +73,11 @@ The Chrome Web Store privacy form and the published privacy policy must match th
 
 ## Privacy policy URL
 
-Before submission, publish [PRIVACY.md](PRIVACY.md) at a public HTTPS URL and enter that URL in the Chrome Web Store Privacy practices tab. The GitHub repository is currently private, so its file URL is not publicly accessible.
+Enter this public URL in the Chrome Web Store Privacy practices tab:
+
+`https://gist.github.com/0xAllenChen/10a27bf6ef9dc5c4f9c7fcb8ecf482c2`
+
+The source policy is maintained in [PRIVACY.md](PRIVACY.md). The main GitHub repository is private, so its file URL is not publicly accessible to Chrome Web Store reviewers.
 
 ## Store graphics
 
