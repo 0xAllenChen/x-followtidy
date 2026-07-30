@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>X FollowTidy progress</title>
+  <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+  <main>
+    <header>
+      <img class="mark" src="icons/icon-48.png" alt="">
+      <div><h1>X FollowTidy</h1><p>Free Unfollow for X</p></div>
+      <span id="state">WORKING</span>
+    </header>
+    <section class="hero">
+      <b id="count">0</b>
+      <span id="total">accounts unfollowed</span>
+      <div class="bar"><i></i></div>
+      <p id="message">Preparing your list…</p>
+      <div id="limit-notice" class="notice hidden">
+        <b>Cleanup paused automatically</b>
+        <span id="limit-detail">X rejected the last unfollow. Wait before continuing so the account is not repeatedly limited.</span>
+      </div>
+      <div class="actions">
+        <button id="pause">Pause cleanup</button>
+        <button id="resume" class="secondary">Continue</button>
+      </div>
+    </section>
+    <section id="donation-prompt" class="donation hidden">
+      <div>
+        <h2>Enjoying X FollowTidy?</h2>
+        <p>X FollowTidy is free. If it saves you time, you can support continued development—completely optional.</p>
+      </div>
+      <div class="donation-actions">
+        <a id="sponsor" href="https://github.com/sponsors/0xAllenChen" target="_blank" rel="noopener noreferrer">Sponsor on GitHub</a>
+        <button id="donation-later" class="secondary small">Not now</button>
+      </div>
+    </section>
+    <section class="controls">
+      <div class="section-head"><h2>Safety controls</h2><button id="save" class="small">Save changes</button></div>
+      <label class="protect-control">
+        <input id="skip-followers" type="checkbox" checked>
+        <span><b>Protect people who follow me</b><small>Never unfollow accounts that X marks as following you</small></span>
+      </label>
+      <div class="control-grid">
+        <label>Follower limit (required)<select id="follower-cap"><option value="1000">Under 1,000</option><option value="5000">Under 5,000</option><option value="10000">Under 10,000</option><option value="25000">Under 25,000</option><option value="100000">Under 100,000</option></select></label>
+        <label>Time between actions<select id="delay"><option value="5">5 seconds</option><option value="8">8 seconds</option><option value="12">12 seconds</option><option value="20">20 seconds</option></select></label>
+        <label>Accounts per batch<select id="batch"><option value="5">5 accounts</option><option value="10">10 accounts</option><option value="15">15 accounts</option></select></label>
+        <label>Cooldown after batch<select id="cooldown"><option value="2">2 minutes</option><option value="5">5 minutes</option><option value="10">10 minutes</option></select></label>
+      </div>
+      <p class="control-note">Follower protection and the follower limit are checked again immediately before every unfollow. Changes apply to remaining accounts.</p>
+    </section>
+    <section>
+      <div class="section-head"><h2>Scanned users</h2><span id="activity-count">0 users</span></div>
+      <p class="list-note">Newest scanned or updated users appear first. Every scanned account is shown, whether unfollowed or kept.</p>
+      <div id="activity" class="activity"><p class="empty">Scanned users will appear here.</p></div>
+      <div class="pagination">
+        <button id="previous" class="secondary small">← Previous</button>
+        <span id="page">Page 1</span>
+        <button id="next" class="secondary small">Next →</button>
+      </div>
+    </section>
+    <p class="foot">X FollowTidy stays beside X without changing your active tab or window.</p>
+  </main>
+  <script src="dashboard.js"></script>
+</body>
+</html>

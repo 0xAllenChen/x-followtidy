@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>X FollowTidy</title>
+    <link rel="stylesheet" href="popup.css">
+  </head>
+  <body>
+    <main>
+      <header>
+        <img class="mark" src="icons/icon-32.png" alt="">
+        <div><h1>X FollowTidy</h1><p>Free Unfollow for X</p></div>
+      </header>
+
+      <section id="setup-card" class="card">
+        <div class="eyebrow">STEP 1</div>
+        <h2>Set your cleanup rules</h2>
+        <p>Choose exactly who you want to review. We won’t look through your list until you’re ready.</p>
+        <div class="rules">
+          <label class="rule"><input id="skip-followers" type="checkbox" checked><span><b>Keep people who follow me</b><small>Protect follow-backs by default</small></span></label>
+          <div class="rule"><span><b>Follower limit (required)</b><small>Only accounts with a verified count below this limit can be unfollowed</small></span></div>
+          <label class="cap">Under <select id="follower-cap" required><option value="1000">1,000 followers</option><option value="5000">5,000 followers</option><option value="10000" selected>10,000 followers</option><option value="25000">25,000 followers</option><option value="100000">100,000 followers</option></select></label>
+        </div>
+        <p id="scan-note" class="muted">We’ll open your X Following page and live progress panel when you start.</p>
+      </section>
+
+      <section id="run-card" class="card">
+        <div class="eyebrow">STEP 2</div>
+        <h2>Required safety limits</h2>
+        <p class="muted">These controls are always applied. Choose a delay, a batch size, and a cooldown before cleanup starts.</p>
+        <div class="settings">
+          <label>Time between each action <select id="delay" required><option value="5">5 seconds</option><option value="8" selected>8 seconds</option><option value="12">12 seconds</option><option value="20">20 seconds</option></select></label>
+          <label>Accounts per batch <select id="batch" required><option value="5">5 accounts</option><option value="10" selected>10 accounts</option><option value="15">15 accounts</option></select></label>
+          <label>Cooldown after every batch <select id="cooldown" required><option value="2">2 minutes</option><option value="5" selected>5 minutes</option><option value="10">10 minutes</option></select></label>
+        </div>
+        <button id="start" class="primary">Start cleaning</button>
+      </section>
+
+      <details class="privacy"><summary>Privacy & safety</summary><p>Your list and settings stay in Chrome’s local storage. X FollowTidy never asks for your password. X may impose account-specific limits; stop immediately if X shows a warning.</p></details>
+    </main>
+    <script src="popup.js"></script>
+  </body>
+</html>

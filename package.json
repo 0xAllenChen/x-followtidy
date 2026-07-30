@@ -1,0 +1,13 @@
+{
+  "name": "x-followtidy",
+  "version": "0.4.4",
+  "private": true,
+  "description": "A local-first Chrome extension for safely tidying an X Following list.",
+  "scripts": {
+    "test": "node tests/filter-utils.test.js && node tests/safety-structure.test.js",
+    "check": "npm test && node --check background.js && node --check content.js && node --check dashboard.js && node --check filter-utils.js && node --check popup.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
